@@ -39,39 +39,23 @@ From human confirmation to machine execution, the industry needs new layers for 
 - **Agent instruction packages:** generic Markdown, Codex Skill, Claude instructions, and Hermes-style agent spec.
 - **GitHub contribution flow:** issue templates for source suggestions, signal candidates, and criteria feedback.
 
-## Use It In An Agent
+## Use It With Agents
 
-Primary page:
-
-```text
-https://stablehunter.ai/agentic-payment-signal.html#daily-signals
-```
-
-Daily Signal API pattern:
-
-```text
-GET https://cms.stablehunter.com/api/daily-digests/{YYYY-MM-DD}?category=information_signal&locale={locale}
-```
-
-Archive API pattern:
-
-```text
-GET https://cms.stablehunter.com/api/daily-digests/archive?category=information_signal&locale={locale}&page=1&limit=30
-```
-
-Instruction packages:
+Agentic Payment Signal is also available as portable instructions for agent workflows.
 
 - [Generic Markdown Skill](./assets/skills/agentic-payment-signal-skill.md)
 - [Codex Skill](./assets/skills/codex-agentic-payment-signal/SKILL.md)
 - [Claude Instructions](./assets/skills/claude-agentic-payment-signal.md)
 - [Hermes Agent Spec](./assets/skills/hermes-agentic-payment-signal.md)
 
-Example questions an agent should be able to answer:
+Agents can ask questions like:
 
 - What changed in Agentic Payment today?
 - Which signals from the past week matter for stablecoin rails?
 - What updates are related to wallet permissions, risk, compliance, or merchant acceptance?
 - Which signals should a payment founder read first?
+
+For API patterns, archive access, share-card URLs, and fallback behavior, see [docs/endpoints.md](./docs/endpoints.md) and [docs/agent-access.md](./docs/agent-access.md).
 
 ## What Counts As A Signal
 
