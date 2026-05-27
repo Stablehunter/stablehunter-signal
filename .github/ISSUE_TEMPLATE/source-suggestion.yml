@@ -1,0 +1,47 @@
+name: Suggest a source
+description: Recommend a source for Agentic Payment Signal tracking.
+title: "[Source] "
+labels: ["source", "needs-verification"]
+body:
+  - type: input
+    id: source_name
+    attributes:
+      label: Source name
+      placeholder: "Stripe Blog, Visa Developer, Circle Blog..."
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: dropdown
+    id: source_type
+    attributes:
+      label: Source type
+      options:
+        - official
+        - media
+        - research
+        - regulatory
+        - community
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this source matters
+      description: Explain why this source is relevant to Agentic Payment.
+      placeholder: "It regularly publishes updates about payment APIs, stablecoin rails, wallet permissions, identity, risk, or compliance."
+    validations:
+      required: true
+  - type: textarea
+    id: watch_for
+    attributes:
+      label: What should we watch for?
+      placeholder: "Product launches, API changes, compliance updates, partner announcements..."
+    validations:
+      required: false

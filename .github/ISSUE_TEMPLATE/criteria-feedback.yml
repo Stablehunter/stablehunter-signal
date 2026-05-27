@@ -1,0 +1,31 @@
+name: Criteria feedback
+description: Challenge or improve the Agentic Payment Signal screening criteria.
+title: "[Criteria] "
+labels: ["criteria"]
+body:
+  - type: dropdown
+    id: feedback_type
+    attributes:
+      label: Feedback type
+      options:
+        - add inclusion rule
+        - add exclusion rule
+        - clarify definition
+        - challenge current criteria
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      placeholder: "What should change, and why?"
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples
+      placeholder: "Add concrete source links or signal examples if possible."
+    validations:
+      required: false
